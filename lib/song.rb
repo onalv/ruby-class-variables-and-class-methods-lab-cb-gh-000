@@ -39,7 +39,7 @@ class Song
     new_array
   end
 
-  def genre_count
+  def self.genre_count
 
   end
 
