@@ -37,4 +37,12 @@ class Song
     end
     new_array
   end
+
+  def genre_count
+
+  end
+
+  def artist_count
+
+  end
 end
