@@ -12,7 +12,8 @@ class Song
     @genre = genre
     @@count += 1
     @@genres << genre
-    
+    @@artists << artist
+
   end
 
   def count
@@ -24,6 +25,15 @@ class Song
     @@genres.each do |genre|
       if !new_array.include?(genre)
         new_array << genre
+    end
+    new_array
+  end
+
+  def artists
+    new_array = []
+    @@artists.each do |artist|
+      if !new_array.include?(artist)
+        new_array << artist
     end
     new_array
   end
