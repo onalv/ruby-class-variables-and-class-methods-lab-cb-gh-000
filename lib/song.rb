@@ -42,7 +42,7 @@ class Song
   def self.genre_count
     new_hash = {}
     @@genres.each do |genre|
-      if !new_hash[genre] == nil
+      if new_hash[genre]
         new_hash[genre] += 1
       else
         new_hash[genre] = 1
