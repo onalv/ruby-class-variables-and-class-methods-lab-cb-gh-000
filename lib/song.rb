@@ -24,6 +24,7 @@ class Song
     @@genres.each do |genre|
       if !new_array.include?(genre)
         new_array << genre
+      end
     end
     new_array
   end
